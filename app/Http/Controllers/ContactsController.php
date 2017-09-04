@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Contact;
 
 class ContactsController extends Controller
 {
@@ -13,7 +14,7 @@ class ContactsController extends Controller
      */
     public function index()
     {
-        return 'fasdfsdfdsf';
+        return Contact::all();
     }
 
     /**
